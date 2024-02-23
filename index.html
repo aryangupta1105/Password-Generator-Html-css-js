@@ -9,6 +9,7 @@
     <script src="path/to/dist/feather.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="wrapper" class="w-full relative">
@@ -36,22 +37,22 @@
 
 
                     <!-- Slider -->
-                    <input type="range" step="1" max="20"  class="slide" data-lengthSlider>
+                    <input type="range" step="1" max="20"  class="slider" data-lengthSlider>
                     <!-- Checkboxes -->
-                    <div class="upper">
+                    <div class="check">
                         <input type="checkbox" id="Upper" class="checkbox">
                         <label for="Upper">Include Uppercase Letters</label>
                     </div>
-                    <div class="lower">
+                    <div class="check">
                         <input type="checkbox" id="Lower" class="checkbox">
                     <label for="Lower">Include lowercase Letters</label>
                     </div>
-                    <div class="num">
+                    <div class="check">
                         
                     <input type="checkbox" id="Num" class="checkbox">
                     <label for="Num">Include Numbers </label>
                     </div>
-                    <div class="symbols">
+                    <div class="check">
                     <input type="checkbox" id="Symbols" class="checkbox">
                     <label for="Symbols">Include Symbols</label>
                     </div>
@@ -59,17 +60,25 @@
 
                     <!-- Strength Calculator -->
                     <div class="Strength-calculator">
-                        <p>Strength</p>
-                        <div data-indicator></div>
+                        <p class="s-head">Strength</p>
+                        <div data-indicator class="s-indicator"></div>
                     </div>
 
                     <!-- Generate button -->
-                    <button data-generateBtn>Generate Password</button>
+                    <button data-generateBtn class="generateBtn">Generate Button</button>
 
             </div>
         </div>
         </div>
     </div>
     <script src="index.js"></script>
+    <!-- <script>ScrollReveal({
+        reset: true,
+        distance : '60px',
+        duration: 2500,
+        delay: 400
+    });
+    ScrollReveal().reveal(".Dibba")
+    </script> -->
 </body>
 </html>
