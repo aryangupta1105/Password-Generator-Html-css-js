@@ -74,7 +74,10 @@
     align-items: baseline;
     
 }
-
+.display-container input{
+    font-size: x-large;
+    color: var(--vb-yellow);
+}
 .pass-display{
     position: relative;
     padding: 1.5rem;
@@ -99,7 +102,7 @@
 .copyBtn{
     position: absolute;
     right: 10%;
-    bottom: 30%;
+    bottom: 40%;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -108,7 +111,7 @@
 .copyMsg{
     color: var(--vb-yellow);
     position: absolute;
-    top: -35px;
+    top: -40px;
     right: -25px;
     background-color: var(--vb-violet2);
     padding: 4px;
@@ -116,14 +119,15 @@
     font-size: large;
     transform: scale(0);
     transform-origin: bottom;
-    opacity: 0;
+    opacity: 1;
     transition: all 299ms ease-in-out;
 }
 
-.copyMsg:active{
+.copyBtn.active .copyMsg{
     opacity: 1;
     transform: scale(1);
 }
+
 .input-container{
     margin: 2rem 2rem;
     padding: 2rem;

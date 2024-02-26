@@ -103,13 +103,13 @@ async function copyContent()
         copyMsg.innerText = "failed";
     }
     // in css we will create active to change opacity to 1
-    copyMsg.classList.add("active");
+    copyBtn.classList.add("active");
 
     // setting timeout function to hide after 2s by removing the active class:
     setTimeout(()=>
     {
-        copyMsg.classList.remove("active");
-    });
+        copyBtn.classList.remove("active");
+    },2000);
 }
 
 
